@@ -1,0 +1,1 @@
+FROM sitoi/dailycheckin:latest
