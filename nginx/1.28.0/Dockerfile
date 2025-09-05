@@ -18,7 +18,8 @@ RUN apk add --no-cache --virtual .build-deps \
     perl-dev
 
 # 下载代理模块(v2.0.3适配Nginx 1.28.0)
-RUN cd /usr/src \
+RUN mkdir -p /usr/src \
+    && cd /usr/src \
     && curl -fSL https://github.com/chobits/ngx_http_proxy_connect_module/archive/refs/tags/v2.0.3.tar.gz -o proxy_connect.tar.gz \
     && tar -zxvf proxy_connect.tar.gz \
     && rm proxy_connect.tar.gz
