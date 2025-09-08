@@ -1,7 +1,7 @@
 
 # 使用官方Nginx 1.28.0基础镜像
 #FROM nginx:1.28.0-alpine
-FROM centos7:latest
+FROM centos:centos7
 # 安装编译工具和模块依赖
 #RUN apk add --no-cache --virtual .build-deps \
 RUN yum install -y  .build-deps \
