@@ -1,5 +1,5 @@
 FROM tomcat:8-jdk8
-COPY images/arthas-bin /opt/arthas
+COPY arthas-bin /opt/arthas
 ENV ARTHAS_HOME=/opt/arthas
 ENV PATH=$PATH:$ARTHAS_HOME
 RUN apt-get update && \
