@@ -3,7 +3,7 @@ COPY arthas-bin /opt/arthas
 ENV ARTHAS_HOME=/opt/arthas
 ENV PATH=$PATH:$ARTHAS_HOME
 RUN apt-get update && \
-    apt-get install -y wget unzip net-tools  iproute2 && \
+    apt-get install -y wget unzip net-tools  iproute2 telnet && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
 	echo '#!/bin/bash\ncd $ARTHAS_HOME && ./as.sh $@' > /usr/local/bin/arthas && \
