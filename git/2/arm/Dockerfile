@@ -1,1 +1,1 @@
-FROM docker pull alpine/git@sha256:e043be20669db13cbcfb6190192babee4cf2dca98709bb0c2d08ca2d35a0a06a
+FROM alpine/git@sha256:e043be20669db13cbcfb6190192babee4cf2dca98709bb0c2d08ca2d35a0a06a
